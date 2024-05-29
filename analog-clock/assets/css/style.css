@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+  }
+  body{
+    background: #f7f7f7;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    max-width: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+  li {
+    list-style: none;
+  }
+
+  .clock {
+    width: 40rem;
+    height: 40rem;
+    background-image: url('../img/removedbg.webp');
+    background-size: 176% 121%;
+    background-position: -60px -46px;
+    border-radius: 50%;
+    box-shadow: 4px 7px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.s {
+  width: 0;
+  height: 334px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  /* transform: rotate(0deg); */
+}
+.s::before {
+  content: "";
+  background-image: url('../img/removedbg.webp');
+  width: 4px;
+  height: 185px;
+  background-position: 172px -107px;
+  position: absolute;
+}
+.m {
+  width: 0;
+  height: 286px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  /* transform: rotate(45deg); */
+}
+.m::before {
+  content: "";
+  background-image: url('../img/removedbg.webp');
+  width: 5px;
+  height: 167px;
+  background-position: 148px -126px;
+  position: absolute;
+}
+.h {
+  width: 0;
+  height: 187px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  /* transform: rotate(90deg); */
+}
+.h::before {
+  content: "";
+  background-image: url('../img/removedbg.webp');
+  width: 13px;
+  height: 120px;
+  background-position: 128px -174px;
+  position: absolute;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Connected Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="content">
+            <h1>Love You Boss</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iure repellendus quibusdam ex, nostrum doloribus!</p>
+            <a  id="modal_open_btn" href="#">View More</a>
+        </div>
+    </header>
+
+
+    <div class="modal-container">
+        <div class="modal">
+            <div class="modal-header">
+                <h3>Edit Post</h3>
+                <button id="modal_close_btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="myLine"></div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsam ullam, magni suscipit recusandae minus et iure dolore doloribus nihil?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsam ullam, magni suscipit recusandae minus et iure dolore doloribus nihil?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsam ullam, magni suscipit recusandae minus et iure dolore doloribus nihil?</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi ipsam ullam, magni suscipit recusandae minus et iure dolore doloribus nihil?</p>
+            </div>
+            <div class="modal-footer">
+                <button class="update-button">Update</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Alert -->
+    <div class="alert">
+        <div class="alert-container">
+            <div class="alert-header">
+                <h2>Unsaved Changes</h2>
+                <button onclick="cancelButton()" class="close">&times;</button>
+            </div>
+            <div class="alert-body">
+                <p>Changes you made will not be saved.</p>
+                <div class="buttons">
+                    <a onclick="cancelButton()" href="#">Keep Editing</a>
+                    <a onclick="discardButton()" href="#">Discard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/data.js"></script>
+    <script src="src/models.js"></script>
+    <script src="src/functions.js"></script>
+    <script src="src/main.js"></script>
+</body>
+</html>

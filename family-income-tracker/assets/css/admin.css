@@ -1,0 +1,32 @@
+/* Admin Css */
+.shop-data tr{
+    vertical-align: middle !important;
+}
+i{
+    pointer-events: none;
+ }
+ label{
+    user-select: none;
+ }
+#exampleModal .modal-dialog {
+    max-width: 600px;
+}
+.student-info {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+table{
+    width: 100% !important;
+}

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+}
+.myLine{
+    width: 100%;
+    height: 1px;
+    background-color: #D8DADF;
+}
+
+.header{
+    height: 80vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../img/banner.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    width: 700px;
+    text-align: center;
+}
+
+.content h1{
+    font-size: 60px;
+    color: #fff;
+}
+.content p{
+    font-size: 14px;
+    color: white;
+    font-weight: 200;
+}
+
+.content a{
+    font-size: 16px;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.modal-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(rgba(255,255,255,.8),rgba(255,255,255,.8));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .1s linear;
+    opacity: 0;
+    pointer-events: none;
+}
+.modal-active.modal-container{
+    opacity: 1;
+    pointer-events: all;
+}
+.modal{
+    width: 500px;
+    height: 500px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,.2), 0 2px 4px 0 rgba(0,0,0,.1);
+    transform: scale(.1);
+    transition: all .3s linear;
+}
+.modal-active.modal-container .modal{
+    transform: scale(1);
+}
+.modal-header{
+    text-align: center;
+    padding: 10px 20px;
+    position: relative;
+}
+.modal-header h3{
+    font-size: 20px;
+    font-weight: 700;
+}
+.modal-header button{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background-color: #E4E6EB;
+    border: none;
+    padding: 5px 12px;
+    font-size: 17px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.modal-header button:hover{
+background-color: #D8DADF;
+}
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+    padding: 20px;
+}
+button.update-button {
+    background: tomato;
+    border: none;
+    outline: none;
+    padding: 9px 31px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+}
+button.update-button:hover{
+    background-color: rgb(251, 79, 49);
+}
+
+.modal-footer {
+    text-align: end;
+    padding: 0 20px;
+}
+
+/* Alert Popup */
+
+.alert{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.alert.alert-active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.alert .alert-container{
+    width: 548px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px 0 rgba(0,0,0,.2), 0 2px 4px 0 rgba(0,0,0,.1);
+    transition: all .3s ease-in-out;
+    transform: translateY(-300px);
+}
+.alert.alert-active .alert-container{
+    transform: translateY(0);
+}
+.alert .alert-container .alert-header{
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e9e9e9;
+}
+.alert .alert-container .alert-header .close{
+    background-color: #D8DADF;
+    border: none;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    font-weight: normal;
+    cursor: pointer;
+}
+.alert .alert-container .alert-body{
+    padding: 15px 20px;
+}
+.alert .alert-container .alert-body .buttons{
+    text-align: right;
+    margin-top: 15px;
+}
+.alert .alert-container .alert-body .buttons a{
+    display: inline-block;
+    padding: 7px 40px;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+}
+.alert .alert-container .alert-body .buttons a:nth-child(1){
+    color: #1e6ed8;
+}
+.alert .alert-container .alert-body .buttons a:nth-child(2){
+    background-color: #1e6ed8;
+    color: #fff;
+}
